@@ -1,0 +1,25 @@
+﻿Build started 2015-11-12 오전 11:36:28.
+     1>Project "C:\Users\P35\Documents\Visual Studio 2013\Projects\Live555\proxyServer\proxyServer.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_WARNINGS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt live555ProxyServer.cpp
+         live555ProxyServer.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\P35\Documents\Visual Studio 2013\Projects\Live555\Release\proxyServer.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\P35\Documents\Visual Studio 2013\Projects\Live555\Release\proxyServer.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\P35\Documents\Visual Studio 2013\Projects\Live555\Release\proxyServer.lib" /MACHINE:X86 /SAFESEH Release\live555ProxyServer.obj
+     1>live555ProxyServer.obj : error LNK2001: unresolved external symbol "public: __thiscall Port::Port(unsigned short)" (??0Port@@QAE@G@Z)
+     1>live555ProxyServer.obj : error LNK2001: unresolved external symbol "public: __thiscall UserAuthenticationDatabase::UserAuthenticationDatabase(char const *,bool)" (??0UserAuthenticationDatabase@@QAE@PBD_N@Z)
+     1>live555ProxyServer.obj : error LNK2001: unresolved external symbol "public: static class BasicUsageEnvironment * __cdecl BasicUsageEnvironment::createNew(class TaskScheduler &)" (?createNew@BasicUsageEnvironment@@SAPAV1@AAVTaskScheduler@@@Z)
+     1>live555ProxyServer.obj : error LNK2001: unresolved external symbol "public: static class BasicTaskScheduler * __cdecl BasicTaskScheduler::createNew(unsigned int)" (?createNew@BasicTaskScheduler@@SAPAV1@I@Z)
+     1>live555ProxyServer.obj : error LNK2001: unresolved external symbol "public: unsigned short __thiscall RTSPServer::httpServerPortNum(void)const " (?httpServerPortNum@RTSPServer@@QBEGXZ)
+     1>live555ProxyServer.obj : error LNK2001: unresolved external symbol "public: bool __thiscall RTSPServer::setUpTunnelingOverHTTP(class Port)" (?setUpTunnelingOverHTTP@RTSPServer@@QAE_NVPort@@@Z)
+     1>live555ProxyServer.obj : error LNK2001: unresolved external symbol "public: char * __thiscall RTSPServer::rtspURL(class ServerMediaSession const *,int)const " (?rtspURL@RTSPServer@@QBEPADPBVServerMediaSession@@H@Z)
+     1>live555ProxyServer.obj : error LNK2001: unresolved external symbol "public: static class RTSPServer * __cdecl RTSPServer::createNew(class UsageEnvironment &,class Port,class UserAuthenticationDatabase *,unsigned int)" (?createNew@RTSPServer@@SAPAV1@AAVUsageEnvironment@@VPort@@PAVUserAuthenticationDatabase@@I@Z)
+     1>live555ProxyServer.obj : error LNK2001: unresolved external symbol "public: void __thiscall GenericMediaServer::addServerMediaSession(class ServerMediaSession *)" (?addServerMediaSession@GenericMediaServer@@QAEXPAVServerMediaSession@@@Z)
+     1>live555ProxyServer.obj : error LNK2001: unresolved external symbol "public: static class RTSPServerWithREGISTERProxying * __cdecl RTSPServerWithREGISTERProxying::createNew(class UsageEnvironment &,class Port,class UserAuthenticationDatabase *,class UserAuthenticationDatabase *,unsigned int,bool,int)" (?createNew@RTSPServerWithREGISTERProxying@@SAPAV1@AAVUsageEnvironment@@VPort@@PAVUserAuthenticationDatabase@@2I_NH@Z)
+     1>live555ProxyServer.obj : error LNK2001: unresolved external symbol "public: static class ProxyServerMediaSession * __cdecl ProxyServerMediaSession::createNew(class UsageEnvironment &,class GenericMediaServer *,char const *,char const *,char const *,char const *,unsigned short,int,int,class MediaTranscodingTable *)" (?createNew@ProxyServerMediaSession@@SAPAV1@AAVUsageEnvironment@@PAVGenericMediaServer@@PBD222GHHPAVMediaTranscodingTable@@@Z)
+     1>live555ProxyServer.obj : error LNK2001: unresolved external symbol "public: static unsigned int OutPacketBuffer::maxSize" (?maxSize@OutPacketBuffer@@2IA)
+     1>C:\Users\P35\Documents\Visual Studio 2013\Projects\Live555\Release\proxyServer.exe : fatal error LNK1120: 12 unresolved externals
+     1>Done Building Project "C:\Users\P35\Documents\Visual Studio 2013\Projects\Live555\proxyServer\proxyServer.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.64
